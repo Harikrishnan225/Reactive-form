@@ -1,0 +1,11 @@
+.circle{
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}

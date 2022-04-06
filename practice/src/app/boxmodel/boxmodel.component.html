@@ -1,0 +1,11 @@
+<app-box [color]="x" *ngFor="let x of colors"></app-box>
+
+<div *ngIf="todos.length === 0">
+    No data found
+</div>
+
+{{birthDay | date : 'yyyy dd MMM' }}
+
+<!-- <ol>
+    <li *ngFor="let u of todos; index as i"> {{i}} {{u.title}}</li>
+</ol> -->

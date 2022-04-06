@@ -1,0 +1,55 @@
+<div class="h-100" style="background-color: #508bfc;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card" style="border-radius: 5px;">
+          <div class="p-4">
+            <form #mf="ngForm" (ngSubmit)="submit(mf)">
+
+              <h3 class="mb-1 text-center">Login</h3>
+              <label class="form-label" for="username">UserName</label>
+              <div class="mb-3">
+                <input type="text" name="username" [(ngModel)]="name" placeholder="Username" class="form-control" id="username" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" email name="email" ngModel placeholder="Email" class="form-control" id="email" required>
+              </div>
+
+              <label class="form-label" for="password">Password</label>
+              <div class="mb-3">
+                <input type="password" ngModel name="password" placeholder="Password" class="form-control" id="password" required>
+              </div>
+
+              <label class="form-label">Select Your Country</label>
+              <select class="form-select" ngModel name="country" required>
+                <option>America</option>
+                <option>Africa</option>
+                <option>India</option>
+                <option>SriLanka</option>
+              </select>
+
+              <div class="form-group mt-4">
+                <label for="date">Date:</label>
+                <input type="date" ngModel id="date" name="date" required>
+              </div>
+
+              <div class="form-group mt-4">
+                <label>Upload a Document</label>
+                <input type="file" ngModel name="file" class="form-control-file" accept="images" required>
+              </div>
+
+              <div class="form-check mt-4">
+                <input class="form-check-input" ngModel name="checkbox" type="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox">Remember Me</label>
+              </div>
+
+              <button class="btn btn-primary btn-block w-100 mt-4" [disabled]="mf.invalid">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

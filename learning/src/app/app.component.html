@@ -1,0 +1,13 @@
+<app-login [color]="value"></app-login>
+
+<button type="button" (click)="colorChange()">
+    {{
+    value !== '' ? (
+      value === 'bg-red' ? 'make color green' : 'make color red'
+    ) : 'change color'
+  }}
+</button>
+
+<button type="button" (click)="value = ''" *ngIf="value !== ''">
+  remove color 
+</button>

@@ -1,0 +1,147 @@
+<div class="container-fluid w-100">
+  <div class="row col-md-12">
+    <div class="col-12 col-md-8 col-lg-12">
+      <div class="mainheader1" col-12 col-sm-12 col-md-12>
+        <img src="/assets/BrandNew Logo.png" class="logo" alt="Brandlogo">
+        <input type="search" class="inputsearch">
+        <span class="namecolor">Welcome Sharddha</span>
+        <i class="bi bi-shop"></i>
+        <i class="bi bi-cart3"></i>
+      </div>
+      <div class="mainheader2 col-12 col-sm-12 col-md-8 col-lg-12">
+        <a href="#">Categories</a>
+        <a href="#">Brands</a>
+        <a href="#">Jewellary</a>
+        <a href="#">Apparel</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Accessories</a>
+      </div>
+      <div class="mainheader3" col-12 col-sm-12 col-md-12>
+        <span>Home&Living/Trey/Cart/Delivery Information</span>
+        <div>Delivery Information</div>
+      </div>
+      <form #kg="ngForm" (ngSubmit)="submit(kg)">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="customerinfo" style="margin-left: 35px;">
+              <header class="mb-2" style="margin-left: 12px;">Contact Information</header>
+              <div style="margin-left:15px">
+                <input type="tel" class="col-4" name="tel" placeholder="(+91) 9876543210" maxlength="10" ngModel
+                  required>
+                <button>GET OTP</button>
+                <input type="password" id="otp" name="otp" placeholder="OTP" class="mb-3" maxlength="4" ngModel
+                  required>
+                <i class="bi bi-arrow-clockwise refresh"></i>
+              </div>
+              <div class="address mb-2">
+                <span>Shipping Address</span> <input type="checkbox" name="checkbox" id="check1" class="tick" ngModel
+                  required>
+                <label for="check1" class="default">Set as default address</label>
+                <div class="custdetails">
+                  <div>
+                    <input type="text" class="col-12 col-sm-12 col-md-8 col-lg-8 mb-3 p-1" name="country"
+                      placeholder="Country or Region" ngModel required>
+                  </div>
+                  <div class="mb-3 col-8 d-flex justify-content-between">
+                    <input type="text" class="p-1 col-5" maxlength="20" name="fullname" placeholder="Full Name" ngModel
+                      required>
+                    <input type="text" class="p-1 col-5" name="address" placeholder="Address" ngModel required>
+                  </div>
+                  <div>
+                    <input type="text" class="col-8 mb-3 p-1" name="landmark" placeholder="Apartment,Suit,etc." ngModel
+                      required>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-8 d-flex justify-content-between">
+                      <input type="text" class="p-1 col-3" name="city" maxlength="10" placeholder="City" ngModel
+                        required>
+                      <input type="text" class="p-1 col-3" name="state" maxlength="10" placeholder="State" ngModel
+                        required>
+                      <input type="text" class="p-1 col-3" name="pincode" maxlength="6" placeholder="PinCode" ngModel
+                        required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input type="checkbox" name="save this" id="check2" class="me-2" ngModel required>
+                    <label for="check2" class="default">Save this Information for later</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-8 d-flex justify-content-between">
+                      <button class="btn btn-success p-1 col-3 bord" [disabled]="kg.invalid">SAVE</button>
+                      <button class="btn btn-success p-1 col-3 bord">EDIT</button>
+                      <button class="btn btn-success p-1 col-5 bord">ADD ADDRESS</button>
+                    </div>
+                  </div>
+                  <!-- {{kg.value | json}}
+                  {{kg.invalid}} -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 h-75">
+            <div class="card orderdetails  col-lg-6">
+              <span class="ordersummary text-center mb-3">Order Summary</span>
+              <div class="row">
+                <div class="col-md-8 col-lg-9 para">
+                  <p>kassa zig zag Trey</p>
+                </div>
+                <div class="col-md-4 col-lg-3 para">
+                  <p>INR 800</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-lg-6 ml para">
+                  <div>
+                    <span>Total: </span>
+                    <span class="leftspan">800</span>
+                  </div>
+                  <div>
+                    <span>Discount: </span>
+                    <span class="leftspann">0</span>
+                  </div>
+                  <div>
+                    <span>Delivery: </span>
+                    <span class="lefttspan">INR 75</span>
+                  </div>
+                </div>
+              </div>
+              <hr class="mt-3">
+              <div class="mb-3">
+                <span class="para">Payable:</span>
+                <span class="para total">INR 875</span>
+              </div>
+              <div class="mb-2">
+                <span class="shipping">Shipping</span>
+              </div>
+              <div>
+                <div class="contact">Contact</div>
+                <span class="contactname mb-3">Customer Name</span>
+                <span class="contactnum mb-3">+919876543210</span>
+              </div>
+              <div class="mb-3">
+                <div class="contact">Delivery to</div>
+                <span class="address">30,8 cross,4 block,Indranagar,chennai,600001</span>
+              </div>
+              <div class="text-center mb-3">
+                <button class="bg-dark text-white bord p-1 w-50">MAKE PAYMENT</button>
+              </div>
+              <div class="text-center">
+                <a href="#" class="text-dark editcart">Edit Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="col-12 footer mt-5 d-flex">
+        <div class="underline font-weight-bold">
+          SAME FOOTER DESIGN
+        </div>
+        <div class="underline">
+          as existing live website
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <button (click)="loadDoc()">Data</button>
+
+<app-box></app-box> -->

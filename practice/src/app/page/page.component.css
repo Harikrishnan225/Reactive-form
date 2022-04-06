@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.mainheader1{
+    background-color: #CBBDFF;
+    height: 60px;
+}
+
+.inputsearch{
+    border: none;
+    outline: none;
+    width: 60%;
+    margin: 18px 10px 10px 60px;
+}
+.namecolor{
+background-color: #DFF8AB;
+padding: 4px;
+font-family: sans-serif;
+}
+i{
+font-size: x-large;
+margin: 15px;
+}
+.logo{
+    margin: 0 0 0 80px;
+}
+.mainheader2{
+    background-color: #EBE5FD;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mainheader2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin: -160px
+}
+.mainheader2 a:hover{
+    text-decoration: underline;
+}
+.mainheader3{
+    background-color: #EBEBEA;
+    height: 90px;
+}
+.mainheader3 span{
+    font-size: small;
+    margin-left: 40px;
+}
+.mainheader3 div{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+.customerinfo{
+   margin: 30px 0 0 15px;
+   font-weight: bold;
+}
+.customerinfo input{
+    font-size: small;
+    padding: 5px;
+}
+.customerinfo button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    font-size: small;
+}
+#otp{
+    width: 60px;
+    margin-left: 5px;
+}
+.refresh{
+    font-size: small;
+    position: relative;
+    left: -34px;
+    top: -1px;
+}
+.custdetails{
+    margin: 5px 0 0 15px;   
+}
+.address span{
+    font-weight: bold;   
+    margin: 30px 10px 0 15px;
+}
+.tick{
+    margin-right: 5px;
+}
+.bord{
+    border: none;
+}
+.default{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.footer{
+    background-color: #E2FBAD;
+    text-decoration: underline;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.orderdetails{
+    background-color: #EBE5FD;
+    border: 2px solid #E1FFA2;
+    padding: 15px;
+    top: -49px;
+    margin-left: 220px;
+}
+.ordersummary{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.para{
+font-size: 14px;
+font-family: sans-serif;
+font-weight: bold;
+}
+.ml{
+    margin-left: auto;
+}
+.leftspan{
+    margin: 0 0 0 65px;
+}
+.leftspann{
+    margin: 0 0 0 53px;
+}
+.lefttspan{
+    margin: 0 0 0 23px;
+}
+.total{
+    margin: 0 0 0 174px;
+}
+.shipping{
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.contact{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contactname{
+    font-size: 14px;
+}
+.contactnum{
+    font-size: 14px;
+    margin: 0 0 0 20px;
+}
+.address{
+    font-size: 14px;
+}
+.editcart{
+    font-size: small;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .ordersummaryup{
+    position: absolute;
+    top:;
+} */

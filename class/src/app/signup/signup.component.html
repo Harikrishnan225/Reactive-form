@@ -1,0 +1,107 @@
+<!-- <div class="h-100" style="background-color: whitesmoke;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12  col-md-8 col-lg-6">
+                <div class="card" style="border-radius: 5px;">
+                    <div class="p-4">
+                        <form #mf="ngForm" (ngSubmit)="submit(mf)">
+                            <h2 class="mb-3 text-center">Signup</h2>
+                            <div class="row">
+                                <div class="col-md-8 col-lg-6 mb-4">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" ngModel placeholder="Enter firstname" name="firstname" required>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" ngModel placeholder="Enter lastname" name="lastname" required>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <label for="email">Email Id</label>
+                                    <input type="email" email ngModel placeholder="Enter Email" name="email" required>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <label for="mobile number">Mobile Number</label>
+                                    <input type="tel" ngModel placeholder="Mobile Number" name="mobile number" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label for="password">Password</label>
+                                    <input type="password" ngModel placeholder="Enter password" id="password" onChange="onChange()" value="" name="password" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label for="password">Conform Password</label>
+                                    <input type="password" ngModel placeholder="Enter password" id="conform" onChange="onChange()" value="" name="conform" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label for="date">Date Of Birth</label>
+                                    <input type="date" ngModel name="dob" [max]="maxDate" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label for="pincode">Pincode</label>
+                                    <input type="text" ngModel name="pin code" required>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <label for="gender">Gender:</label>
+                                    <input ngModel type="radio" class="m-2" name="gender" value="m" required>
+                                    <label for="male">Male</label>
+                                    <input ngModel type="radio" class="m-2" name="gender" value="f" required>
+                                    <label for="female">Female</label>
+                                    <input ngModel type="radio" class="m-2" name="gender" value="o" required>
+                                    <label for="others">Others</label>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <select [ngModel]="1" class="select" name="state" required>
+                                        <option value="1">State</option>
+                                        <option>Karnataka</option>
+                                        <option>Kerala</option>
+                                        <option>Tamil Nadu</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <select [ngModel]="1" class="select" name="city" required>
+                                        <option value="1">City</option>
+                                        <option>Chennai</option>
+                                        <option>Madurai</option>
+                                        <option>Trichy</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <input ngModel type="checkbox" id="checkbox" class="m-2" name="checkbox" required>
+                                    <label for="checkbox">I accept Terms & Conditions</label>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button
+                                        class="btn btn-primary btn-block w-25" [disabled]="mf.invalid">Signup</button>
+                                </div>
+                            </div>
+                        </form>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of users">
+                <td>{{x.name}}</td>
+                <td>{{x.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
